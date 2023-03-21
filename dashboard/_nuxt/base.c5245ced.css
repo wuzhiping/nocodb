@@ -10,3 +10,5 @@ div[class="min-w-2/4 xl:max-w-2/4 w-full mx-auto"] { max-width:100%; }
 div[class="flex items-center gap-2"] { display:none; }
 div[class="prose-sm mt-4 text-gray-500"] { display:none; }
 a[class="caption nc-project-menu-item py-2 text-primary underline hover:opacity-75"] { display:none; }
+
+div[class="relative flex w-full items-end"]  { display:none; }
