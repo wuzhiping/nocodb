@@ -2,4 +2,8 @@
     reverse_proxy /* http://localhost:8080 {
 
     }
+    
+    handle /dashboard/_nuxt/base.c5245ced.css {
+        file_server
+    }
 }
