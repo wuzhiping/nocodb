@@ -4,3 +4,25 @@
 ### docker build -t shawoo/nocodb .
 
 ### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb
+
+<pre>
+
+  noco:
+    image: shawoo/nocodb
+    volumes:
+      - ./noco:/usr/app/data
+    environment:
+      VER: 2
+      NC_DB: pg://a.b.c.d:5432?u=uid&p=pwd&d=noco
+
+      NC_SMTP_FROM: noco@copr.com
+      NC_SMTP_HOST: xxxxxx.qiye.163.com
+      NC_SMTP_PORT: 465
+      NC_SMTP_USERNAME: xxxxxxxx
+      NC_SMTP_PASSWORD: xxxxxxxx
+      NC_SMTP_SECURE: "true"
+      NC_SMTP_IGNORE_TLS: "false"
+    ports:
+      - 1979:1979
+
+</pre>
