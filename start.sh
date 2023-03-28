@@ -29,6 +29,7 @@ then
   tar -xzf /usr/src/appEntry/app.tar.gz -C /usr/src/app/
 fi
 
-node docker/main.js &
+#node docker/main.js &
+pm2 start docker/main.js -i 2
 
 ./caddy run --watch
