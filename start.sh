@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 FILE="/usr/src/app/package.json"
 #sleep 5
@@ -30,6 +30,8 @@ then
 fi
 
 #node docker/main.js &
-pm2 start docker/main.js -i 2
+pm2 start docker/main.js -i 1
 
-./caddy run --watch
+./caddy run --watch &
+
+pm2 logs
