@@ -29,8 +29,9 @@ then
   tar -xzf /usr/src/appEntry/app.tar.gz -C /usr/src/app/
 fi
 
+CPU="${CPU:-1}"
 #node docker/main.js &
-pm2 start docker/main.js -i 1
+pm2 start docker/main.js -i ${CPU}
 
 ./caddy run --watch &
 
