@@ -3,16 +3,17 @@
 
 ### docker build -t shawoo/nocodb:pm2 .
 
-### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:pm2
+### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:CPU
 
 <pre>
 
   noco:
-    image: shawoo/nocodb:pm2
+    image: shawoo/nocodb:CPU
     volumes:
       - ./noco:/usr/app/data
     environment:
       VER: 2
+      CPU: 1
       NC_DB: pg://a.b.c.d:5432?u=uid&p=pwd&d=noco
 
       NC_SMTP_FROM: noco@copr.com
