@@ -12,3 +12,5 @@ div[class="prose-sm mt-4 text-gray-500"] { display:none; }
 a[class="caption nc-project-menu-item py-2 text-primary underline hover:opacity-75"] { display:none; }
 
 div[class="relative flex w-full items-end"]  { display:none; }
+
+form .nc-cell-attachment { min-height:75px!important; }
