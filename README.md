@@ -3,14 +3,15 @@
 
 ### docker build -t shawoo/nocodb:CPU .
 
-### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:CPU
+### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:beta
 
 <pre>
 
   noco:
-    image: shawoo/nocodb:CPU
+    image: shawoo/nocodb:beta
     volumes:
       - ./noco:/usr/app/data
+      - ./amis/:/usr/src/app/amis/
     environment:
       VER: 2
       CPU: 1
