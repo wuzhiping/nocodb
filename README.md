@@ -1,7 +1,7 @@
 # https://www.nocodb.com
 # https://caddyserver.com
 
-### docker build -t shawoo/nocodb:CPU .
+### docker build -t shawoo/nocodb:beta .
 
 ### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:beta
 
