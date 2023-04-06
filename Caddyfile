@@ -3,7 +3,15 @@
 
     }
     
+    handle /amis/* {
+        file_server
+    }
+    
     handle /dashboard/_nuxt/base.c5245ced.css {
         file_server
     }
+    handle /dashboard/_nuxt/entry.73299a1d.css {
+        file_server
+    }
+
 }
