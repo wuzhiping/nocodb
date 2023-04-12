@@ -1,14 +1,14 @@
 # https://www.nocodb.com
 # https://caddyserver.com
 
-### docker build -t shawoo/nocodb:beta .
+### docker build -t shawoo/nocodb:0.106.0 .
 
-### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:beta
+### docker run --rm -it -p 80:1979 -v "$(pwd)"/nocodb:/usr/app/data/ shawoo/nocodb:0.106.0
 
 <pre>
 
   noco:
-    image: shawoo/nocodb:beta
+    image: shawoo/nocodb:0.106.0
     volumes:
       - ./noco:/usr/app/data
       - ./amis/:/usr/src/app/amis/
