@@ -15,6 +15,9 @@
     environment:
       VER: 2
       CPU: 1
+      
+      TZ: Asia/Shanghai
+      
       NC_DB: pg://a.b.c.d:5432?u=uid&p=pwd&d=noco
 
       NC_SMTP_FROM: noco@copr.com
