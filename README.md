@@ -1,3 +1,4 @@
+# https://github.com/nocodb/nocodb/releases
 # https://www.nocodb.com
 # https://caddyserver.com
 
