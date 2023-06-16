@@ -32,3 +32,9 @@
       - 1979:1979
 
 </pre>
+
+
+<pre>
+docker save -o nocodb.0.109.1.tar shawoo/nocodb:0.109.1
+docker load -i nocodb.0.109.1.tar
+</pre>
