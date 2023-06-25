@@ -21,6 +21,9 @@
       
       NC_DB: pg://a.b.c.d:5432?u=uid&p=pwd&d=noco
 
+      NC_PUBLIC_URL: https://nocodb.xxx.com
+      NC_AUTOMATION_LOG_LEVEL: ERROR
+  
       NC_SMTP_FROM: noco@copr.com
       NC_SMTP_HOST: xxxxxx.qiye.163.com
       NC_SMTP_PORT: 465
