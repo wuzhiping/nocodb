@@ -41,3 +41,8 @@
 docker save -o nocodb.0.109.7.tar shawoo/nocodb:0.109.7
 docker load -i nocodb.0.109.7.tar
 </pre>
+
+<pre>
+  docker export {{CONTAINER ID}} > image-xxx.tar
+  docker import - {{REPOSITORY}} < image-xxx.tar
+</pre>
